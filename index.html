@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <form onsubmit="event.preventDefault();greet()">
+        <input type="text" name="age" id="age" placeholder="Age">
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <input type="text" name="surname" id="surname" placeholder="Surname" />
+      <button type="submit">Calculate</button>
+    </form> -->
+    <div class="container">
+      <div id="resultContainer">
+        <h1 id="res">Your Bmi is</h1>
+        <h4 id="result"></h4>
+        <p id="category"></p>
+      </div>
+      <form onsubmit="event.preventDefault();calcBmi()">
+        <h2>Weight</h2>
+        <input
+        type="text"
+        name="weight"
+        id="weight"
+        placeholder="                                        kg"
+        />
+        <h2>Height</h2>
+        <input
+        type="text"
+        name="height"
+        id="height"
+        placeholder="                                         m"
+        />
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
